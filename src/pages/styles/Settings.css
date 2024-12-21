@@ -1,0 +1,120 @@
+.settings-container {
+  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.settings-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.settings-card {
+  margin-bottom: 25px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.settings-input {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.settings-button {
+  display: block;
+  width: 200px;
+  margin: 15px auto 0; /* Center align the buttons */
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 115, 230, 0.3);
+}
+
+.settings-button:hover {
+  background-color: #005bb5;
+  box-shadow: 0 4px 12px rgba(0, 115, 230, 0.4);
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.settings-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  padding: 10px 0;
+}
+
+.settings-option p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.settings-select {
+  width: 180px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Small Button Styling */
+.small-button {
+  width: 120px; /* Smaller width */
+  padding: 8px 12px; /* Reduced padding */
+  font-size: 14px; /* Smaller font size */
+  margin-left: 10px; /* Space between the switch and the button */
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.small-button:hover {
+  background-color: #ddd;
+  border-color: #aaa;
+  transform: translateY(-1px);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .settings-container {
+    padding: 20px;
+  }
+
+  .settings-title {
+    font-size: 24px;
+  }
+
+  .settings-card {
+    padding: 15px;
+  }
+
+  .settings-select {
+    width: 100%;
+  }
+
+  .settings-button {
+    width: 100%; /* Full width for smaller screens */
+  }
+}

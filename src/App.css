@@ -1,0 +1,153 @@
+/* Style for navbar container */
+.menu {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: center; /* Centers the navbar items */
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the list (ul) */
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Makes the list items appear horizontally */
+}
+
+/* Style for each list item */
+.menu ul li {
+  margin: 0 15px; /* Horizontal spacing between links */
+}
+
+/* Style for links */
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.menu ul li a:hover {
+  background-color: #444;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 20px 30px;  /* Increased padding for a taller navbar */
+  font-family: "Arial", sans-serif;
+  height: 80px; /* Increased height of the navbar */
+}
+
+/* Navbar links */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  font-size: 1rem;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-links a:hover {
+  background-color: #ff6f61;
+  transform: scale(1.05);
+}
+
+.navbar-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.profile-icon {
+  cursor: pointer;
+}
+
+.profile-icon-img {
+  width: 40px; /* Set the width */
+  height: 40px; /* Set the height equal to the width to make it circular */
+  border-radius: 50%; /* Ensures it’s circular */
+  object-fit: cover; /* Ensures the image doesn’t stretch and maintains aspect ratio */
+  border: 2px solid #fff; /* Optional: add a border around the circle */
+}
+
+/* Profile Card Styles */
+.profile-card {
+  position: absolute;
+  top: 80px; /* Adjusted to be below the navbar */
+  right: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 220px;
+  text-align: center;
+  color: #333;
+  z-index: 10;
+}
+
+.profile-card-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #333;
+}
+
+.profile-header {
+  margin-bottom: 10px;
+}
+
+.profile-card p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Sign-Out Button */
+.sign-out-button {
+  background-color: #0f0e0e;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.sign-out-button:hover {
+  background-color: #332e2d0c;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-links li {
+    margin-bottom: 10px;
+  }
+}
